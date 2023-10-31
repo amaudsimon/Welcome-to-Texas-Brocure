@@ -1,0 +1,146 @@
+.body{
+  height: 200%;
+  position: relative;
+  overflow:scroll;
+}
+.Header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 2.5%;
+    font-size: 20px;
+    font-family:Courier New;
+    background-color: aqua;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    text-align: center;
+    z-index: 1;
+
+  }
+  .nav-menu{
+    font-family:Courier New;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    height: 3%;
+    top: 34px;
+    left: 0;
+    right: 0;
+    border-style: solid;
+    border-width: thick;
+    z-index: 1;
+
+  }
+  .Houston{
+    background-color: yellow;
+    font-size: 20px;
+    text-align: center;
+
+  }
+  .Austin{
+    background-color: green;
+    font-size: 20px;
+    text-align: center;
+    
+  
+  }
+  .Dallas{
+    background-color: orange;
+    font-size: 20px;
+    text-align: center;
+  }
+  .main-content{
+    font-family:Courier New;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: absolute;
+    overflow: scroll;
+    padding-top: 5px;
+    top: 70px;
+    height: 70%;
+    text-align: center;
+    border-style: solid;
+
+  }
+  .main-content img{
+    width: 50%;
+    float: right;
+  }
+  .texas_pop{
+    background-color: rgb(25, 206, 116);
+    line-height: 2;
+  }
+  .texas_pic{
+    font-size: 30px;
+    background-color: bisque;
+    text-align: left;
+  
+  }
+  #opinion{
+    color: blue;
+  }
+  .texas_animal{
+    background-color: brown;
+    line-height: 2;
+  }
+.group1{
+    background-color: green;
+    line-height: 2;
+    padding: 5px
+}
+.group2{
+    background-color: bisque;
+    padding: 5px
+
+
+}
+.group2 img{
+    max-width: 100%;
+    min-width: 100%;
+
+    padding-top: 100px;
+}
+.group3{
+    background-color: plum;
+    line-height: 2;
+    
+}
+.homepage{
+    position: absolute;
+    bottom: -10px;
+    right: 5px;
+}
+.homepage:hover{
+  background-color: red;
+}
+p{
+  font-weight: bold;
+}
+.user_form{
+  background-color: whitesmoke;
+  position: absolute;
+  bottom: 30px;
+  margin-top: 30px;
+}
+.foot{
+  font-family:Courier New;
+  background-color: gainsboro;
+  width: 600px;
+  border-style: solid;
+  padding: 1px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: -25px;
+  left: 0px
+}
+.foot td{
+  border: solid;
+  padding: 5px;
+}
+.works_cited{
+  font-weight: bold;
+  color: red;
+}
+

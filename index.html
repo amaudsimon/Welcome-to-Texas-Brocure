@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Texas</title>
+    <link rel="stylesheet" href="General CSS/general.css">
+  </head>
+  <body>
+    <div class="Header">
+      Welcome to Texas!
+    </div>
+    <div class="nav-menu">
+      <div class="Houston">
+        <button><a href="http://127.0.0.1:5500/index4.html">Houston</a></button>
+      </div> 
+      <div class="Austin">
+        <button><a href="http://127.0.0.1:5500/index3.html">Austin</a></button>
+      </div>
+      <div class="Dallas">
+        <button><a href="http://127.0.0.1:5500/index5.html">Dallas</a></button>
+        </div>
+    </div>
+    <div class="main-content">
+      <div class="texas_pop">
+        <p>Texas Population:</p>
+        As of 2023, the population of Texas is around 31 million people
+      </div>
+      <div class="texas_pic">
+        <a href="https://www.texas.gov" target="_blank">Texas</a>
+        <img src="Images/Texas Map.png">
+        <p id="opinion">Texas is the greatest state in the USA</p>
+      </div>
+      <div class="texas_animal">
+        <p>Texas State Animal:</p> 
+        The Texas Longhorn is the state animal
+        <p><a href="https://texasproud.com/official-state-animal-of-texas/">Information about the longhorn can be found here.</a></p>
+
+      </div>
+    </div>
+    <div class="footer">
+      <div>About Us</div>
+      <div>Contact Us</div>
+      <div>FAQ's</div>
+      <div>Site Policies</div>
+      <div>Privacy Policy</div>
+      <div>Help & Support</div>
+    </div>
+    <div class="user_form">
+    <p>To learn more about Texas, fill in the form below and a representative will be in contact with you soon!</p>
+    <form>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+    
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    
+      <label for="confirm-email">Confirm Email:</label>
+      <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm your email address" required>
+    
+      <label for="question">Question:</label>
+      <textarea id="question" name="question" rows="4" placeholder="Ask your question here" required></textarea>
+    
+      <input type="submit" value="Submit">
+    </form>
+    
+    <script>
+      var emailField = document.getElementById('email');
+      var confirmEmailField = document.getElementById('confirm-email');
+    
+      emailField.addEventListener('input', function() {
+        if (emailField.value !== confirmEmailField.value) {
+          confirmEmailField.setCustomValidity("Email addresses don't match");
+        } else {
+          confirmEmailField.setCustomValidity('');
+        }
+      });
+    
+      confirmEmailField.addEventListener('input', function() {
+        if (emailField.value !== confirmEmailField.value) {
+          confirmEmailField.setCustomValidity("Email addresses don't match");
+        } else {
+          confirmEmailField.setCustomValidity('');
+        }
+      });
+      </script>
+      </div>
+  </body>
+</html> 
